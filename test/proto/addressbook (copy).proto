@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package tutorial;
+
+message Config {
+    float decision_surf_idt = 1;
+    float target_color_min_dist = 2;
+    float big_track_bus_min_length = 3;
+    bool log_proto_binary = 4;
+    bool log_stat_proto_size = 5;
+    bool config_dedug_log = 6;
+    bool target_color_log_open = 7;
+    bool cdcu_func_check = 8;
+    uint32 dynamic_obj_filter_mode = 9;
+    bool dynamic_obj_filter_log_open = 10;
+    float kalman_filter_R = 11;
+    float kalman_filter_Q = 12;
+    float static_filter_1 = 13;
+    float static_filter_2 = 14;
+    float static_filter_3 = 15;
+    bool yaw_filter_open = 16;
+    uint32 yaw_filter_debug_id = 17;
+    float yaw_filter_lp_k = 18;
+    float yaw_filter_static_vel = 19;
+    uint32 yaw_filter_frame_num = 20;
+    bool type_filter_open = 21;
+    uint32 type_filter_count = 22;
+    bool yaw_dirction_debug = 23;
+    uint32 dynamic_obj_cache_run = 24;
+    uint32 dynamic_obj_cache_stop = 25;
+    bool dynamic_cache_pool_open = 26;
+    bool static_cache_pool_open = 27;
+    bool dynamic_id_filter_open = 28;
+    lane_line_omit_frame_strategy lane_line_omit_frame_strategy = 29;
+}
+
+message lane_line_omit_frame_strategy{
+    bool enable = 1;
+    low_speed_case low_speed_case = 2;
+    static_case static_case = 3;
+}
+
+message low_speed_case{
+    uint32 frame_count = 1;
+    float speed_ceiling = 2;
+}
+
+message static_case{
+    uint32 frame_count = 1;
+}
+

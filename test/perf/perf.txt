@@ -1,0 +1,440 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 64K of event 'cycles'
+# Event count (approx.): 55972151170
+#
+# Children      Self  Command   Shared Object      Symbol                                  
+# ........  ........  ........  .................  ........................................
+#
+    97.53%     0.00%  perf_for  perf_for           [.] _start
+            |
+            ---_start
+               __libc_start_main
+               main
+               |          
+               |--69.32%--loop_big
+               |          |          
+               |           --68.62%--for_loop
+               |                     |          
+               |                     |--33.35%--std::cos<int>
+               |                     |          |          
+               |                     |           --32.32%--__cos_fma
+               |                     |          
+               |                      --30.08%--std::sin<int>
+               |                                |          
+               |                                 --28.70%--__sin_fma
+               |          
+                --28.21%--loop_small
+                          |          
+                           --27.90%--for_loop
+                                     |          
+                                     |--13.50%--std::cos<int>
+                                     |          |          
+                                     |           --13.05%--__cos_fma
+                                     |          
+                                      --12.30%--std::sin<int>
+                                                |          
+                                                 --11.74%--__sin_fma
+
+    97.53%     0.00%  perf_for  libc-2.31.so       [.] __libc_start_main
+            |
+            ---__libc_start_main
+               main
+               |          
+               |--69.32%--loop_big
+               |          |          
+               |           --68.62%--for_loop
+               |                     |          
+               |                     |--33.35%--std::cos<int>
+               |                     |          |          
+               |                     |           --32.32%--__cos_fma
+               |                     |          
+               |                      --30.08%--std::sin<int>
+               |                                |          
+               |                                 --28.70%--__sin_fma
+               |          
+                --28.21%--loop_small
+                          |          
+                           --27.90%--for_loop
+                                     |          
+                                     |--13.50%--std::cos<int>
+                                     |          |          
+                                     |           --13.05%--__cos_fma
+                                     |          
+                                      --12.30%--std::sin<int>
+                                                |          
+                                                 --11.74%--__sin_fma
+
+    97.53%     0.00%  perf_for  perf_for           [.] main
+            |
+            ---main
+               |          
+               |--69.32%--loop_big
+               |          |          
+               |           --68.62%--for_loop
+               |                     |          
+               |                     |--33.35%--std::cos<int>
+               |                     |          |          
+               |                     |           --32.32%--__cos_fma
+               |                     |          
+               |                      --30.08%--std::sin<int>
+               |                                |          
+               |                                 --28.70%--__sin_fma
+               |          
+                --28.21%--loop_small
+                          |          
+                           --27.90%--for_loop
+                                     |          
+                                     |--13.50%--std::cos<int>
+                                     |          |          
+                                     |           --13.05%--__cos_fma
+                                     |          
+                                      --12.30%--std::sin<int>
+                                                |          
+                                                 --11.74%--__sin_fma
+
+    96.52%     7.27%  perf_for  perf_for           [.] for_loop
+            |          
+            |--89.25%--for_loop
+            |          |          
+            |          |--46.85%--std::cos<int>
+            |          |          |          
+            |          |           --45.37%--__cos_fma
+            |          |          
+            |           --42.38%--std::sin<int>
+            |                     |          
+            |                     |--40.45%--__sin_fma
+            |                     |          
+            |                      --0.62%--0x55d3b1076084
+            |          
+             --7.27%--_start
+                       __libc_start_main
+                       main
+                       |          
+                       |--5.17%--loop_big
+                       |          for_loop
+                       |          
+                        --2.10%--loop_small
+                                  for_loop
+
+    69.32%     0.00%  perf_for  perf_for           [.] loop_big
+            |
+            ---loop_big
+               |          
+                --68.62%--for_loop
+                          |          
+                          |--33.35%--std::cos<int>
+                          |          |          
+                          |           --32.32%--__cos_fma
+                          |          
+                           --30.08%--std::sin<int>
+                                     |          
+                                      --28.70%--__sin_fma
+
+    47.94%     1.92%  perf_for  perf_for           [.] std::cos<int>
+            |          
+            |--46.03%--std::cos<int>
+            |          |          
+            |           --45.37%--__cos_fma
+            |          
+             --1.44%--_start
+                       __libc_start_main
+                       main
+                       |          
+                        --1.00%--loop_big
+                                  |          
+                                   --0.57%--for_loop
+                                             std::cos<int>
+
+    46.57%    46.49%  perf_for  libm-2.31.so       [.] __cos_fma
+            |          
+            |--45.29%--_start
+            |          __libc_start_main
+            |          main
+            |          |          
+            |          |--32.28%--loop_big
+            |          |          for_loop
+            |          |          std::cos<int>
+            |          |          __cos_fma
+            |          |          
+            |           --13.01%--loop_small
+            |                     for_loop
+            |                     std::cos<int>
+            |                     __cos_fma
+            |          
+            |--0.66%--0x7fff5715105f
+            |          __cos_fma
+            |          
+             --0.52%--0x7fff5715106f
+                       __cos_fma
+
+    42.96%     1.89%  perf_for  perf_for           [.] std::sin<int>
+            |          
+            |--41.07%--std::sin<int>
+            |          |          
+            |          |--40.45%--__sin_fma
+            |          |          
+            |           --0.62%--0x55d3b1076084
+            |          
+             --1.70%--_start
+                       __libc_start_main
+                       main
+                       |          
+                       |--1.19%--loop_big
+                       |          |          
+                       |           --0.92%--for_loop
+                       |                     std::sin<int>
+                       |          
+                        --0.50%--loop_small
+
+    41.06%    40.97%  perf_for  libm-2.31.so       [.] __sin_fma
+            |          
+            |--40.36%--_start
+            |          __libc_start_main
+            |          main
+            |          |          
+            |          |--28.65%--loop_big
+            |          |          for_loop
+            |          |          std::sin<int>
+            |          |          __sin_fma
+            |          |          
+            |           --11.71%--loop_small
+            |                     for_loop
+            |                     std::sin<int>
+            |                     __sin_fma
+            |          
+             --0.61%--0x7fff5715106f
+                       __sin_fma
+
+    28.21%     0.00%  perf_for  perf_for           [.] loop_small
+            |
+            ---loop_small
+               |          
+                --27.90%--for_loop
+                          |          
+                          |--13.50%--std::cos<int>
+                          |          |          
+                          |           --13.05%--__cos_fma
+                          |          
+                           --12.30%--std::sin<int>
+                                     |          
+                                      --11.74%--__sin_fma
+
+     1.13%     0.00%  perf_for  [stack]            [.] 0x00007fff5715106f
+            |
+            ---0x7fff5715106f
+               |          
+               |--0.61%--__sin_fma
+               |          
+                --0.52%--__cos_fma
+
+     0.66%     0.00%  perf_for  [stack]            [.] 0x00007fff5715105f
+            |
+            ---0x7fff5715105f
+               __cos_fma
+
+     0.62%     0.62%  perf_for  perf_for           [.] 0x0000000000001084
+            |
+            ---_start
+               __libc_start_main
+               main
+
+     0.62%     0.00%  perf_for  perf_for           [.] 0x000055d3b1076084
+            |
+            ---0x55d3b1076084
+
+     0.46%     0.00%  perf_for  [stack]            [.] 0x00007fff5715108f
+     0.44%     0.44%  perf_for  perf_for           [.] 0x00000000000010b0
+     0.44%     0.00%  perf_for  perf_for           [.] 0x000055d3b10760b0
+     0.21%     0.21%  perf_for  perf_for           [.] 0x00000000000010b4
+     0.21%     0.00%  perf_for  perf_for           [.] 0x000055d3b10760b4
+     0.20%     0.00%  perf_for  [stack]            [.] 0x00007fff5715107f
+     0.17%     0.00%  perf_for  [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.16%     0.00%  perf_for  [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.15%     0.00%  perf_for  [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.14%     0.00%  perf_for  [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.13%     0.00%  perf_for  [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.11%     0.00%  perf_for  [kernel.kallsyms]  [k] tick_sched_timer
+     0.09%     0.00%  perf_for  [kernel.kallsyms]  [k] tick_sched_handle.isra.0
+     0.08%     0.00%  perf_for  [kernel.kallsyms]  [k] update_process_times
+     0.06%     0.00%  perf_for  [kernel.kallsyms]  [k] scheduler_tick
+     0.03%     0.00%  perf_for  [kernel.kallsyms]  [k] irq_exit_rcu
+     0.03%     0.00%  perf_for  [kernel.kallsyms]  [k] __softirqentry_text_start
+     0.03%     0.00%  perf_for  [kernel.kallsyms]  [k] task_tick_fair
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] asm_common_interrupt
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] common_interrupt
+     0.02%     0.01%  perf_for  [kernel.kallsyms]  [k] perf_event_task_tick
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] tick_do_update_jiffies64
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] timekeeping_advance
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] tick_sched_do_timer
+     0.02%     0.00%  perf_for  [kernel.kallsyms]  [k] update_wall_time
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] tasklet_hi_action
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] tasklet_action_common.isra.0
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] usb_giveback_urb_bh
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] __usb_hcd_giveback_urb
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] hid_irq_in
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] update_curr
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] net_rx_action
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] __napi_poll
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] e1000e_poll
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] timerqueue_add
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] enqueue_hrtimer
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] update_load_avg
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] run_posix_cpu_timers
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] irqentry_exit
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] irqentry_exit_to_user_mode
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] exit_to_user_mode_prepare
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] try_to_wake_up
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] ttwu_do_activate
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] native_write_msr
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] timekeeping_update
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] arch_scale_freq_tick
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] xhci_ring_ep_doorbell
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] usb_submit_urb
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] usb_hcd_submit_urb
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] xhci_urb_enqueue
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] xhci_queue_intr_tx
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] account_user_time
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] account_process_tick
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] psi_task_change
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] wake_up_process
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] trigger_load_balance
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] __remove_hrtimer
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] tick_program_event
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_core
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_core_si
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_sched_clock_irq
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] fpregs_assert_state_consistent
+     0.01%     0.00%  perf_for  [kernel.kallsyms]  [k] xhci_queue_bulk_tx
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] cpuacct_account_field
+     0.01%     0.01%  perf_for  [kernel.kallsyms]  [k] hrtimer_active
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hrtimer_wakeup
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] perf_pmu_enable.part.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] x86_pmu_enable
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] intel_pmu_enable_all
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] e1000_irq_enable
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] napi_complete_done
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] gro_normal_list.part.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] netif_receive_skb_list_internal
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __netif_receive_skb_list_core
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] input_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hid_input_report
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hid_report_raw_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] clockevents_program_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] psi_group_change
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sync_regs
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] _raw_spin_lock
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] update_rq_clock
+     0.00%     0.00%  perf_for  perf_for           [.] 0x0000000000001080
+     0.00%     0.00%  perf_for  perf_for           [.] 0x000055d3b1076080
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __wake_up_common_lock
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __wake_up_common
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ep_poll_callback
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __wake_up
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] native_irq_return_iret
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] rb_erase
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] update_vsyscall
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] native_read_msr
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hidinput_report_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] input_handle_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] input_pass_values.part.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] input_to_handler
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] evdev_events
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_list_rcv
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_sublist_rcv
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_sublist_rcv_finish
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_local_deliver
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_local_deliver_finish
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ip_protocol_deliver_rcu
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __update_load_avg_cfs_rq
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] iterate_groups.isra.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] rb_next
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __update_load_avg_se
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __perf_event_task_sched_in
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] schedule
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __schedule
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] finish_task_switch
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ctx_sched_in
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] perf_event_sched_in
+     0.00%     0.00%  perf_for  [unknown]          [.] 0xbc822e4e1a4330fa
+     0.00%     0.00%  perf_for  libgcc_s.so.1      [.] 0x0000000000003cd0
+     0.00%     0.00%  perf_for  [unknown]          [.] 0x000000003aac549f
+     0.00%     0.00%  perf_for  libc-2.31.so       [.] __run_exit_handlers
+     0.00%     0.00%  perf_for  libgcc_s.so.1      [.] 0x00007f2a3a8c4cd0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ksoftirqd_running
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] native_sched_clock
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sched_clock_cpu
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sched_clock
+     0.00%     0.00%  perf_for  [unknown]          [.] 0x3c77438f00001f9f
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] _find_next_bit
+     0.00%     0.00%  perf_for  [unknown]          [.] 0xbc86477b00001f9f
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] packet_rcv
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sock_def_readable
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __wake_up_sync_key
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] pollwake
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] default_wake_function
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] perf_event_update_userpage
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] visit_groups_merge.constprop.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] merge_sched_in
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] event_sched_in.isra.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] perf_swevent_add
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] intel_uncore_fw_release_timer
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] xhci_irq
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __common_interrupt
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] handle_edge_irq
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] handle_irq_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] handle_irq_event_percpu
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __handle_irq_event_percpu
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] _raw_read_lock_irqsave
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] evdev_pass_values.part.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hid_input_field
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] hid_process_event
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] decay_load
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sk_filter_trim_cap
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] kmem_cache_free
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_do_batch
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] file_free_rcu
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] tcp_ack_update_rtt.isra.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] tcp_v4_rcv
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] tcp_v4_do_rcv
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] tcp_rcv_established
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] tcp_ack
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] place_entity
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_report_qs_rnp
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] rcu_gp_kthread_wake
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] swake_up_one
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] swake_up_locked.part.0
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] enqueue_task_fair
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] enqueue_entity
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] input_set_timestamp
+     0.00%     0.00%  perf_for  [unknown]          [.] 0x3c64541a2461e10b
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __irqentry_text_end
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] pvclock_gtod_notify
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] update_cfs_group
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] reweight_entity
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] update_fast_timekeeper
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ntp_get_next_leap
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] ktime_get
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] update_min_vruntime
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] invoke_rcu_core
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] usb_free_urb
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] native_queued_spin_lock_slowpath
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] __calc_delta
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] cpuacct_charge
+     0.00%     0.00%  perf_for  [unknown]          [.] 0x3c895136a60231cf
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] perf_event_groups_first
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] asm_sysvec_reschedule_ipi
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] sysvec_reschedule_ipi
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] irqentry_nmi_exit
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] nmi_cpu_backtrace
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] intel_bts_enable_local
+     0.00%     0.00%  perf_for  [kernel.kallsyms]  [k] intel_pmu_handle_irq
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

@@ -1,0 +1,120 @@
+syntax = "proto3";
+package xpilot.sr2_0.proto;
+
+message Config {
+    driving_config driving_config = 1;
+    parking_config parking_config = 2;
+}
+
+message driving_config {
+    float decision_surf_idt = 1;
+    float target_color_min_dist = 2;
+    float big_track_bus_min_length = 3;
+    bool log_proto_binary = 4;
+    bool log_stat_proto_size = 5;
+    bool config_dedug_log = 6;
+    bool target_color_log_open = 7;
+    bool cdcu_func_check = 8;
+    uint32 dynamic_obj_filter_mode = 9;
+    bool dynamic_obj_filter_log_open = 10;
+    float kalman_filter_R = 11;
+    float kalman_filter_Q = 12;
+    bool yaw_filter_open = 13;
+    uint32 yaw_filter_debug_id = 14;
+    float yaw_filter_lp_k = 15;
+    float yaw_filter_static_vel = 16;
+    uint32 yaw_filter_frame_num = 17;
+    bool type_filter_open = 18;
+    uint32 type_filter_count = 19;
+    uint32 type_filter_following_count = 20;
+    bool lane_line_polyfit_open = 21;
+    bool dynamic_id_filter_open = 22;
+    dynamic_pose_filter_strategy dynamic_pose_filter_strategy = 23;
+    cache_pool_static_strategy cache_pool_static_strategy = 24;
+    cache_pool_dynamic_strategy cache_pool_dynamic_strategy = 25;
+    lane_line_omit_frame_strategy lane_line_omit_frame_strategy = 26;
+    signal_light_status_strategy signal_light_status_strategy = 27;
+    intersection_recognition_strategy intersection_recognition_strategy = 28;
+    tfl_blink_suppress_strategy tfl_blink_suppress_strategy = 29;
+}
+
+message parking_config {
+    
+}
+
+message tfl_blink_suppress_strategy {
+  bool enable  = 1;      
+  uint32 frame_count = 2;    
+}
+
+
+message intersection_recognition_strategy {
+    bool enable = 1;              
+    bool debug_log = 2;         
+    float speed_limit = 3;          
+    drive_into_condition drive_into_condition = 4;
+    drive_out_condition drive_out_condition = 5;
+}
+
+message drive_into_condition {    
+    float dist_road_mark = 1;         
+    float length_road_mark = 2;        
+    float width_lane = 3;            
+    uint32 length_search_laneline = 4;
+}
+message drive_out_condition {
+    uint32 dist_ego_drive = 1;
+}
+
+message signal_light_status_strategy {
+  bool open = 1;       
+  bool yaw_dirction_debug = 2;
+  float yaw_dirction_left = 3;     
+  float yaw_dirction_right = 4;
+}
+
+message cache_pool_dynamic_strategy {
+  bool open  = 1;                       
+  bool yaw_dirction_debug = 2;         
+  float yaw_dirction_left = 3;         
+  float yaw_dirction_right = 4;       
+  uint32 run_cache_count = 5;
+  uint32 stop_cache_count = 6;
+  float self_vehicle_stop_speed = 7;
+  float union_rate_min = 8;
+  float update_max_velocity = 9; 
+  float update_max_distance = 10;
+  float check_delta_dist = 11;
+  float check_delta_time = 12;
+}
+
+message cache_pool_static_strategy {
+    bool open = 1;     
+    bool open_sod = 2;  
+    uint32 cache_count = 3;        
+    float min_dist = 4;    
+    float check_delta_dist = 5;            
+    float check_delta_time = 6;             
+}
+
+message dynamic_pose_filter_strategy {
+    bool open = 1;
+    uint32 cache_count = 2;
+    float vehicle_stop_speed = 3;
+}
+
+message lane_line_omit_frame_strategy{
+    bool enable = 1;
+    low_speed_case low_speed_case = 2;
+    static_case static_case = 3;
+}
+
+message low_speed_case{
+    uint32 frame_count = 1;
+    float speed_ceiling = 2;
+}
+
+message static_case{
+    uint32 frame_count = 1;
+}
+
