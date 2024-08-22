@@ -3,7 +3,7 @@
 void func(const char*& Var){
     
     Var = "Hello";
-    std::cout << &Var  << ", value: " << Var << std::endl;
+    std::cout << &Var  << ", value: " << Var << " ,*Var: " << *Var<< std::endl;
     }
 void func1(char* const Var) {
     // Var = "Hello";
@@ -42,8 +42,16 @@ int main() {
 
     int const* const p4 = &i;
 
-    const char* Var = "World";
-    std::cout << &Var  << ", value: " << Var << std::endl;
+    char* a = "a";
+    std::cout << "a: " << a << ", *a: " << *a<< std::endl;
+    int aa = 1;
+    const int* a1 = &aa;
+    // *a1 = 2;
+  
+    char* tmp = "abc";
+    const char* Var = tmp;
+    std::cout << &Var  << ", value: " << Var  << ",*Var: " << *Var << std::endl;
+    // *Var = "test";
     func(Var);
     std::cout << Var << std::endl;
 
