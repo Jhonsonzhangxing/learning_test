@@ -1,0 +1,480 @@
+3482399 15:31:35 restart_syscall(<... resuming interrupted read ...>) = 0
+3482399 15:31:41 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3d4000
+3482399 15:31:41 write(1, "creat new thread...\n", 20) = 20
+3482399 15:31:41 clone(child_stack=0x7f204a3ddff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3497218 15:31:41 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:31:41 <... clone resumed>)   = 3497218
+3497218 15:31:41 <... write resumed>)   = 14
+3482399 15:31:41 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3497218 15:31:41 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:31:41 <... write resumed>)   = 40
+3482399 15:31:41 wait4(-1,  <unfinished ...>
+3497218 15:31:42 <... clock_nanosleep resumed>0x7f204a3ddfa0) = 0
+3497218 15:31:42 write(1, "thread exit.\n", 13) = 13
+3497218 15:31:42 exit(0)                = ?
+3497218 15:31:42 +++ exited with 0 +++
+3482399 15:31:42 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3497218
+3482399 15:31:42 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:31:52 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3ca000
+3482399 15:31:52 write(1, "creat new thread...\n", 20) = 20
+3482399 15:31:52 clone(child_stack=0x7f204a3d3ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3497588
+3497588 15:31:52 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:31:52 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3497588 15:31:52 <... write resumed>)   = 14
+3482399 15:31:52 <... write resumed>)   = 40
+3497588 15:31:52 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:31:52 wait4(-1,  <unfinished ...>
+3497588 15:31:53 <... clock_nanosleep resumed>0x7f204a3d3fa0) = 0
+3497588 15:31:53 write(1, "thread exit.\n", 13) = 13
+3497588 15:31:53 exit(0)                = ?
+3497588 15:31:53 +++ exited with 0 +++
+3482399 15:31:53 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3497588
+3482399 15:31:53 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:03 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3c0000
+3482399 15:32:03 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:03 clone(child_stack=0x7f204a3c9ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3498010 15:32:03 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:03 <... clone resumed>)   = 3498010
+3498010 15:32:03 <... write resumed>)   = 14
+3482399 15:32:03 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3498010 15:32:03 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:03 <... write resumed>)   = 40
+3482399 15:32:03 wait4(-1,  <unfinished ...>
+3498010 15:32:04 <... clock_nanosleep resumed>0x7f204a3c9fa0) = 0
+3498010 15:32:04 write(1, "thread exit.\n", 13) = 13
+3498010 15:32:04 exit(0)                = ?
+3498010 15:32:04 +++ exited with 0 +++
+3482399 15:32:04 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3498010
+3482399 15:32:04 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:14 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3b6000
+3482399 15:32:14 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:14 clone(child_stack=0x7f204a3bfff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3498383
+3498383 15:32:14 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:14 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3498383 15:32:14 <... write resumed>)   = 14
+3498383 15:32:14 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:14 <... write resumed>)   = 40
+3482399 15:32:14 wait4(-1,  <unfinished ...>
+3498383 15:32:15 <... clock_nanosleep resumed>0x7f204a3bffa0) = 0
+3498383 15:32:15 write(1, "thread exit.\n", 13) = 13
+3498383 15:32:15 exit(0)                = ?
+3498383 15:32:15 +++ exited with 0 +++
+3482399 15:32:15 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3498383
+3482399 15:32:15 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:25 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3ac000
+3482399 15:32:25 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:25 clone(child_stack=0x7f204a3b5ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3498740
+3498740 15:32:25 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:25 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3498740 15:32:25 <... write resumed>)   = 14
+3482399 15:32:25 <... write resumed>)   = 40
+3498740 15:32:25 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:25 wait4(-1,  <unfinished ...>
+3498740 15:32:26 <... clock_nanosleep resumed>0x7f204a3b5fa0) = 0
+3498740 15:32:26 write(1, "thread exit.\n", 13) = 13
+3498740 15:32:26 exit(0)                = ?
+3498740 15:32:26 +++ exited with 0 +++
+3482399 15:32:26 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3498740
+3482399 15:32:26 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:36 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a3a2000
+3482399 15:32:36 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:36 clone(child_stack=0x7f204a3abff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3499120
+3499120 15:32:36 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:36 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3499120 15:32:36 <... write resumed>)   = 14
+3482399 15:32:36 <... write resumed>)   = 40
+3499120 15:32:36 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:36 wait4(-1,  <unfinished ...>
+3499120 15:32:37 <... clock_nanosleep resumed>0x7f204a3abfa0) = 0
+3499120 15:32:37 write(1, "thread exit.\n", 13) = 13
+3499120 15:32:37 exit(0)                = ?
+3499120 15:32:37 +++ exited with 0 +++
+3482399 15:32:37 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3499120
+3482399 15:32:37 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:47 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a398000
+3482399 15:32:47 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:47 clone(child_stack=0x7f204a3a1ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3499524
+3499524 15:32:47 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:47 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3499524 15:32:47 <... write resumed>)   = 14
+3482399 15:32:47 <... write resumed>)   = 40
+3499524 15:32:47 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:47 wait4(-1,  <unfinished ...>
+3499524 15:32:48 <... clock_nanosleep resumed>0x7f204a3a1fa0) = 0
+3499524 15:32:48 write(1, "thread exit.\n", 13) = 13
+3499524 15:32:48 exit(0)                = ?
+3499524 15:32:48 +++ exited with 0 +++
+3482399 15:32:48 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3499524
+3482399 15:32:48 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:32:58 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a38e000
+3482399 15:32:58 write(1, "creat new thread...\n", 20) = 20
+3482399 15:32:58 clone(child_stack=0x7f204a397ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3499949 15:32:58 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:32:58 <... clone resumed>)   = 3499949
+3499949 15:32:58 <... write resumed>)   = 14
+3482399 15:32:58 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3499949 15:32:58 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:32:58 <... write resumed>)   = 40
+3482399 15:32:58 wait4(-1,  <unfinished ...>
+3499949 15:32:59 <... clock_nanosleep resumed>0x7f204a397fa0) = 0
+3499949 15:32:59 write(1, "thread exit.\n", 13) = 13
+3499949 15:32:59 exit(0)                = ?
+3499949 15:32:59 +++ exited with 0 +++
+3482399 15:32:59 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3499949
+3482399 15:32:59 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:33:09 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a384000
+3482399 15:33:09 write(1, "creat new thread...\n", 20) = 20
+3482399 15:33:09 clone(child_stack=0x7f204a38dff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3500393 15:33:09 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:33:09 <... clone resumed>)   = 3500393
+3500393 15:33:09 <... write resumed>)   = 14
+3482399 15:33:09 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3500393 15:33:09 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:33:09 <... write resumed>)   = 40
+3482399 15:33:09 wait4(-1,  <unfinished ...>
+3500393 15:33:10 <... clock_nanosleep resumed>0x7f204a38dfa0) = 0
+3500393 15:33:10 write(1, "thread exit.\n", 13) = 13
+3500393 15:33:10 exit(0)                = ?
+3500393 15:33:10 +++ exited with 0 +++
+3482399 15:33:10 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3500393
+3482399 15:33:10 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:33:20 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a37a000
+3482399 15:33:20 write(1, "creat new thread...\n", 20) = 20
+3482399 15:33:20 clone(child_stack=0x7f204a383ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3500741 15:33:20 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:33:20 <... clone resumed>)   = 3500741
+3500741 15:33:20 <... write resumed>)   = 14
+3482399 15:33:20 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3500741 15:33:20 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:33:20 <... write resumed>)   = 40
+3482399 15:33:20 wait4(-1,  <unfinished ...>
+3500741 15:33:21 <... clock_nanosleep resumed>0x7f204a383fa0) = 0
+3500741 15:33:21 write(1, "thread exit.\n", 13) = 13
+3500741 15:33:21 exit(0)                = ?
+3500741 15:33:21 +++ exited with 0 +++
+3482399 15:33:21 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3500741
+3482399 15:33:21 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:33:31 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a370000
+3482399 15:33:31 write(1, "creat new thread...\n", 20) = 20
+3482399 15:33:31 clone(child_stack=0x7f204a379ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3501127 15:33:31 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:33:31 <... clone resumed>)   = 3501127
+3501127 15:33:31 <... write resumed>)   = 14
+3482399 15:33:31 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3501127 15:33:31 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:33:31 <... write resumed>)   = 40
+3482399 15:33:31 wait4(-1,  <unfinished ...>
+3501127 15:33:32 <... clock_nanosleep resumed>0x7f204a379fa0) = 0
+3501127 15:33:32 write(1, "thread exit.\n", 13) = 13
+3501127 15:33:32 exit(0)                = ?
+3501127 15:33:32 +++ exited with 0 +++
+3482399 15:33:32 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3501127
+3482399 15:33:32 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:33:42 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a366000
+3482399 15:33:42 write(1, "creat new thread...\n", 20) = 20
+3482399 15:33:42 clone(child_stack=0x7f204a36fff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3501504 15:33:42 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:33:42 <... clone resumed>)   = 3501504
+3501504 15:33:42 <... write resumed>)   = 14
+3482399 15:33:42 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3501504 15:33:42 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:33:42 <... write resumed>)   = 40
+3482399 15:33:42 wait4(-1,  <unfinished ...>
+3501504 15:33:43 <... clock_nanosleep resumed>0x7f204a36ffa0) = 0
+3501504 15:33:43 write(1, "thread exit.\n", 13) = 13
+3501504 15:33:43 exit(0)                = ?
+3501504 15:33:43 +++ exited with 0 +++
+3482399 15:33:43 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3501504
+3482399 15:33:43 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:33:53 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a35c000
+3482399 15:33:53 write(1, "creat new thread...\n", 20) = 20
+3482399 15:33:53 clone(child_stack=0x7f204a365ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3501836 15:33:53 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:33:53 <... clone resumed>)   = 3501836
+3501836 15:33:53 <... write resumed>)   = 14
+3482399 15:33:53 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3501836 15:33:53 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:33:53 <... write resumed>)   = 40
+3482399 15:33:53 wait4(-1,  <unfinished ...>
+3501836 15:33:54 <... clock_nanosleep resumed>0x7f204a365fa0) = 0
+3501836 15:33:54 write(1, "thread exit.\n", 13) = 13
+3501836 15:33:54 exit(0)                = ?
+3501836 15:33:54 +++ exited with 0 +++
+3482399 15:33:54 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3501836
+3482399 15:33:54 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:04 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a352000
+3482399 15:34:04 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:04 clone(child_stack=0x7f204a35bff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3502276
+3502276 15:34:04 write(1, "Done! Thread pid: 3502276\nthread"..., 40 <unfinished ...>
+3482399 15:34:04 write(1, "Done! Thread pid: 3502276\n", 26 <unfinished ...>
+3502276 15:34:04 <... write resumed>)   = 40
+3482399 15:34:04 <... write resumed>)   = 26
+3502276 15:34:04 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:34:04 wait4(-1,  <unfinished ...>
+3502276 15:34:05 <... clock_nanosleep resumed>0x7f204a35bfa0) = 0
+3502276 15:34:05 write(1, "thread exit.\n", 13) = 13
+3502276 15:34:05 exit(0)                = ?
+3502276 15:34:05 +++ exited with 0 +++
+3482399 15:34:05 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3502276
+3482399 15:34:05 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:15 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a348000
+3482399 15:34:15 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:15 clone(child_stack=0x7f204a351ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3502664 15:34:15 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:34:15 <... clone resumed>)   = 3502664
+3502664 15:34:15 <... write resumed>)   = 14
+3482399 15:34:15 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3502664 15:34:15 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:34:15 <... write resumed>)   = 40
+3482399 15:34:15 wait4(-1,  <unfinished ...>
+3502664 15:34:16 <... clock_nanosleep resumed>0x7f204a351fa0) = 0
+3502664 15:34:16 write(1, "thread exit.\n", 13) = 13
+3502664 15:34:16 exit(0)                = ?
+3502664 15:34:16 +++ exited with 0 +++
+3482399 15:34:16 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3502664
+3482399 15:34:16 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:26 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a33e000
+3482399 15:34:26 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:26 clone(child_stack=0x7f204a347ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3503032
+3503032 15:34:26 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:34:26 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3503032 15:34:26 <... write resumed>)   = 14
+3482399 15:34:26 <... write resumed>)   = 40
+3503032 15:34:26 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:34:26 wait4(-1,  <unfinished ...>
+3503032 15:34:27 <... clock_nanosleep resumed>0x7f204a347fa0) = 0
+3503032 15:34:27 write(1, "thread exit.\n", 13) = 13
+3503032 15:34:27 exit(0)                = ?
+3503032 15:34:27 +++ exited with 0 +++
+3482399 15:34:27 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3503032
+3482399 15:34:27 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:37 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a334000
+3482399 15:34:37 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:37 clone(child_stack=0x7f204a33dff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3503421
+3482399 15:34:37 write(1, "Done! Thread pid: 3503421\n", 26 <unfinished ...>
+3503421 15:34:37 write(1, "Done! Thread pid: 3503421\nthread"..., 40 <unfinished ...>
+3482399 15:34:37 <... write resumed>)   = 26
+3503421 15:34:37 <... write resumed>)   = 40
+3482399 15:34:37 wait4(-1,  <unfinished ...>
+3503421 15:34:37 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, 0x7f204a33dfa0) = 0
+3503421 15:34:38 write(1, "thread exit.\n", 13) = 13
+3503421 15:34:38 exit(0)                = ?
+3503421 15:34:38 +++ exited with 0 +++
+3482399 15:34:38 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3503421
+3482399 15:34:38 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:48 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a32a000
+3482399 15:34:48 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:48 clone(child_stack=0x7f204a333ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3503747
+3482399 15:34:48 write(1, "Done! Thread pid: 3503747\n", 26 <unfinished ...>
+3503747 15:34:48 write(1, "Done! Thread pid: 3503747\nthread"..., 40 <unfinished ...>
+3482399 15:34:48 <... write resumed>)   = 26
+3503747 15:34:48 <... write resumed>)   = 40
+3482399 15:34:48 wait4(-1,  <unfinished ...>
+3503747 15:34:48 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, 0x7f204a333fa0) = 0
+3503747 15:34:49 write(1, "thread exit.\n", 13) = 13
+3503747 15:34:49 exit(0)                = ?
+3503747 15:34:49 +++ exited with 0 +++
+3482399 15:34:49 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3503747
+3482399 15:34:49 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:34:59 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a320000
+3482399 15:34:59 write(1, "creat new thread...\n", 20) = 20
+3482399 15:34:59 clone(child_stack=0x7f204a329ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3504074
+3504074 15:34:59 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:34:59 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3504074 15:34:59 <... write resumed>)   = 14
+3482399 15:34:59 <... write resumed>)   = 40
+3504074 15:34:59 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:34:59 wait4(-1,  <unfinished ...>
+3504074 15:35:00 <... clock_nanosleep resumed>0x7f204a329fa0) = 0
+3504074 15:35:00 write(1, "thread exit.\n", 13) = 13
+3504074 15:35:00 exit(0)                = ?
+3504074 15:35:00 +++ exited with 0 +++
+3482399 15:35:00 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3504074
+3482399 15:35:00 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:35:10 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a316000
+3482399 15:35:10 write(1, "creat new thread...\n", 20) = 20
+3482399 15:35:10 clone(child_stack=0x7f204a31fff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3504503 15:35:10 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:35:10 <... clone resumed>)   = 3504503
+3504503 15:35:10 <... write resumed>)   = 14
+3482399 15:35:10 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3504503 15:35:10 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:35:10 <... write resumed>)   = 40
+3482399 15:35:10 wait4(-1,  <unfinished ...>
+3504503 15:35:11 <... clock_nanosleep resumed>0x7f204a31ffa0) = 0
+3504503 15:35:11 write(1, "thread exit.\n", 13) = 13
+3504503 15:35:11 exit(0)                = ?
+3504503 15:35:11 +++ exited with 0 +++
+3482399 15:35:11 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3504503
+3482399 15:35:11 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:35:21 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a30c000
+3482399 15:35:21 write(1, "creat new thread...\n", 20) = 20
+3482399 15:35:21 clone(child_stack=0x7f204a315ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3504818
+3504818 15:35:21 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:35:21 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3504818 15:35:21 <... write resumed>)   = 14
+3482399 15:35:21 <... write resumed>)   = 40
+3504818 15:35:21 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:35:21 wait4(-1,  <unfinished ...>
+3504818 15:35:22 <... clock_nanosleep resumed>0x7f204a315fa0) = 0
+3504818 15:35:22 write(1, "thread exit.\n", 13) = 13
+3504818 15:35:22 exit(0)                = ?
+3504818 15:35:22 +++ exited with 0 +++
+3482399 15:35:22 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3504818
+3482399 15:35:22 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:35:32 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a302000
+3482399 15:35:32 write(1, "creat new thread...\n", 20) = 20
+3482399 15:35:32 clone(child_stack=0x7f204a30bff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3505148 15:35:32 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:35:32 <... clone resumed>)   = 3505148
+3505148 15:35:32 <... write resumed>)   = 14
+3482399 15:35:32 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3505148 15:35:32 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:35:32 <... write resumed>)   = 40
+3482399 15:35:32 wait4(-1,  <unfinished ...>
+3505148 15:35:33 <... clock_nanosleep resumed>0x7f204a30bfa0) = 0
+3505148 15:35:33 write(1, "thread exit.\n", 13) = 13
+3505148 15:35:33 exit(0)                = ?
+3505148 15:35:33 +++ exited with 0 +++
+3482399 15:35:33 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3505148
+3482399 15:35:33 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:35:43 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2f8000
+3482399 15:35:43 write(1, "creat new thread...\n", 20) = 20
+3482399 15:35:43 clone(child_stack=0x7f204a301ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3505509 15:35:43 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:35:43 <... clone resumed>)   = 3505509
+3505509 15:35:43 <... write resumed>)   = 14
+3482399 15:35:43 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3505509 15:35:43 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:35:43 <... write resumed>)   = 40
+3482399 15:35:43 wait4(-1,  <unfinished ...>
+3505509 15:35:44 <... clock_nanosleep resumed>0x7f204a301fa0) = 0
+3505509 15:35:44 write(1, "thread exit.\n", 13) = 13
+3505509 15:35:44 exit(0)                = ?
+3505509 15:35:44 +++ exited with 0 +++
+3482399 15:35:44 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3505509
+3482399 15:35:44 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:35:54 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2ee000
+3482399 15:35:54 write(1, "creat new thread...\n", 20) = 20
+3482399 15:35:54 clone(child_stack=0x7f204a2f7ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3505839 15:35:54 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:35:54 <... clone resumed>)   = 3505839
+3505839 15:35:54 <... write resumed>)   = 14
+3482399 15:35:54 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3505839 15:35:54 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:35:54 <... write resumed>)   = 40
+3482399 15:35:54 wait4(-1,  <unfinished ...>
+3505839 15:35:55 <... clock_nanosleep resumed>0x7f204a2f7fa0) = 0
+3505839 15:35:55 write(1, "thread exit.\n", 13) = 13
+3505839 15:35:55 exit(0)                = ?
+3505839 15:35:55 +++ exited with 0 +++
+3482399 15:35:55 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3505839
+3482399 15:35:55 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:36:05 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2e4000
+3482399 15:36:05 write(1, "creat new thread...\n", 20) = 20
+3482399 15:36:05 clone(child_stack=0x7f204a2edff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3506153
+3482399 15:36:05 write(1, "Done! Thread pid: 3506153\n", 26 <unfinished ...>
+3506153 15:36:05 write(1, "Done! Thread pid: 3506153\nthread"..., 40 <unfinished ...>
+3482399 15:36:05 <... write resumed>)   = 26
+3506153 15:36:05 <... write resumed>)   = 40
+3482399 15:36:05 wait4(-1,  <unfinished ...>
+3506153 15:36:05 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0}, 0x7f204a2edfa0) = 0
+3506153 15:36:06 write(1, "thread exit.\n", 13) = 13
+3506153 15:36:06 exit(0)                = ?
+3506153 15:36:06 +++ exited with 0 +++
+3482399 15:36:06 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3506153
+3482399 15:36:06 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:36:16 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2da000
+3482399 15:36:16 write(1, "creat new thread...\n", 20) = 20
+3482399 15:36:16 clone(child_stack=0x7f204a2e3ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3506571
+3506571 15:36:16 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:36:16 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3506571 15:36:16 <... write resumed>)   = 14
+3482399 15:36:16 <... write resumed>)   = 40
+3506571 15:36:16 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:36:16 wait4(-1,  <unfinished ...>
+3506571 15:36:17 <... clock_nanosleep resumed>0x7f204a2e3fa0) = 0
+3506571 15:36:17 write(1, "thread exit.\n", 13) = 13
+3506571 15:36:17 exit(0)                = ?
+3506571 15:36:17 +++ exited with 0 +++
+3482399 15:36:17 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3506571
+3482399 15:36:17 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:36:27 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2d0000
+3482399 15:36:27 write(1, "creat new thread...\n", 20) = 20
+3482399 15:36:27 clone(child_stack=0x7f204a2d9ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3506887 15:36:27 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:36:27 <... clone resumed>)   = 3506887
+3506887 15:36:27 <... write resumed>)   = 14
+3482399 15:36:27 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3506887 15:36:27 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:36:27 <... write resumed>)   = 40
+3482399 15:36:27 wait4(-1,  <unfinished ...>
+3506887 15:36:28 <... clock_nanosleep resumed>0x7f204a2d9fa0) = 0
+3506887 15:36:28 write(1, "thread exit.\n", 13) = 13
+3506887 15:36:28 exit(0)                = ?
+3506887 15:36:28 +++ exited with 0 +++
+3482399 15:36:28 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3506887
+3482399 15:36:28 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:36:38 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2c6000
+3482399 15:36:38 write(1, "creat new thread...\n", 20) = 20
+3482399 15:36:38 clone(child_stack=0x7f204a2cfff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3507244 15:36:38 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:36:38 <... clone resumed>)   = 3507244
+3507244 15:36:38 <... write resumed>)   = 14
+3482399 15:36:38 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3507244 15:36:38 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:36:38 <... write resumed>)   = 40
+3482399 15:36:38 wait4(-1,  <unfinished ...>
+3507244 15:36:39 <... clock_nanosleep resumed>0x7f204a2cffa0) = 0
+3507244 15:36:39 write(1, "thread exit.\n", 13) = 13
+3507244 15:36:39 exit(0)                = ?
+3507244 15:36:39 +++ exited with 0 +++
+3482399 15:36:39 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3507244
+3482399 15:36:39 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:36:49 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2bc000
+3482399 15:36:49 write(1, "creat new thread...\n", 20) = 20
+3482399 15:36:49 clone(child_stack=0x7f204a2c5ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND) = 3507575
+3507575 15:36:49 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:36:49 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3507575 15:36:49 <... write resumed>)   = 14
+3482399 15:36:49 <... write resumed>)   = 40
+3507575 15:36:49 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:36:49 wait4(-1,  <unfinished ...>
+3507575 15:36:50 <... clock_nanosleep resumed>0x7f204a2c5fa0) = 0
+3507575 15:36:50 write(1, "thread exit.\n", 13) = 13
+3507575 15:36:50 exit(0)                = ?
+3507575 15:36:50 +++ exited with 0 +++
+3482399 15:36:50 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3507575
+3482399 15:36:50 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:37:00 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2b2000
+3482399 15:37:00 write(1, "creat new thread...\n", 20) = 20
+3482399 15:37:00 clone(child_stack=0x7f204a2bbff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3507902 15:37:00 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:37:00 <... clone resumed>)   = 3507902
+3507902 15:37:00 <... write resumed>)   = 14
+3482399 15:37:00 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3507902 15:37:00 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:37:00 <... write resumed>)   = 40
+3482399 15:37:00 wait4(-1,  <unfinished ...>
+3507902 15:37:01 <... clock_nanosleep resumed>0x7f204a2bbfa0) = 0
+3507902 15:37:01 write(1, "thread exit.\n", 13) = 13
+3507902 15:37:01 exit(0)                = ?
+3507902 15:37:01 +++ exited with 0 +++
+3482399 15:37:01 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3507902
+3482399 15:37:01 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0}, 0x7ffd6822fb10) = 0
+3482399 15:37:11 mmap(NULL, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f204a2a8000
+3482399 15:37:11 write(1, "creat new thread...\n", 20) = 20
+3482399 15:37:11 clone(child_stack=0x7f204a2b1ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND <unfinished ...>
+3508346 15:37:11 write(1, "thread enter.\n", 14 <unfinished ...>
+3482399 15:37:11 <... clone resumed>)   = 3508346
+3508346 15:37:11 <... write resumed>)   = 14
+3482399 15:37:11 write(1, "thread enter.\nDone! Thread pid: "..., 40 <unfinished ...>
+3508346 15:37:11 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+3482399 15:37:11 <... write resumed>)   = 40
+3482399 15:37:11 wait4(-1,  <unfinished ...>
+3508346 15:37:12 <... clock_nanosleep resumed>0x7f204a2b1fa0) = 0
+3508346 15:37:12 write(1, "thread exit.\n", 13) = 13
+3508346 15:37:12 exit(0)                = ?
+3508346 15:37:12 +++ exited with 0 +++
+3482399 15:37:12 <... wait4 resumed>NULL, __WCLONE|__WALL, NULL) = 3508346
+3482399 15:37:12 clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=10, tv_nsec=0},  <detached ...>

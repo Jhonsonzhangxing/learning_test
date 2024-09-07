@@ -1,44 +1,35 @@
-#include<iostream>
+#include <iostream>
 
 #pragma pack(push,1)
 struct UnalignedStruct {
     char a;
     int b;
-    short c;
+    short c;//1+4+2
 };
 #pragma pack(pop)
 
-struct AlignedStruct {
+struct myStruct1 {
     char a;
     int b;
-    short c;//(1+3) + 4 + (2+2)
+    short c;//1+3+4+2+2 = 12
 };
 
-struct MyStruct {
+struct myStruct2 {
     double a;
     char b;
-    int c;//(8) + (1+3) + (4)
+    int c;//8+1+3+4 = 16
 };
 
-struct MyStruct1 {
-    double a;
-    char b;
-    short c;//(8) + (1+1) + (2) + ((4))
-};
-
-struct MyStruct2 {
+struct myStruct3 {
     char a;
     double b;
-    int c;//(8) + (1+1) + (2) + ((4))
+    int c;//1+7+8+4+4 = 24
 };
 
 int main() {
-    // std::cout << "size of unaligned struct: " << sizeof(UnalignedStruct) << std::endl;
-    // std::cout << "size of aligned struct: " << sizeof(AlignedStruct) << std::endl;
-    // std::cout << "size of aligned Mystruct: " << sizeof(MyStruct) << std::endl;
-    // std::cout << "size of aligned Mystruct: " << sizeof(MyStruct1) << std::endl;
-    // std::cout << "offset a: " << offsetof(MyStruct1,a)  << ", b: " << offsetof(MyStruct1,b) << ", c: " << offsetof(MyStruct1,c) << std::endl;
-    std::cout << "size of aligned Mystruct: " << sizeof(MyStruct2) << std::endl;
-    std::cout << "offset a: " << offsetof(MyStruct2,a)  << ", b: " << offsetof(MyStruct2,b) << ", c: " << offsetof(MyStruct2,c) << std::endl;
+    std::cout << "int: " << sizeof(int) << ", short: " << sizeof(short) << ", double: " << sizeof(double) << std::endl;
+    // std::cout << sizeof(UnalignedStruct) << std::endl;
+    using myStruct = myStruct3;
+    std::cout << sizeof(myStruct) << ",alignof: " << alignof(myStruct) << ", offset a: " << offsetof(myStruct,a) << ",b: " << offsetof(myStruct,b) << ",c: " << offsetof(myStruct, c) << std::endl;
     return 0;
 }
