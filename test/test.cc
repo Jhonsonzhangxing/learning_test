@@ -16,7 +16,7 @@ public:
     };
 
     SmartPtr(const SmartPtr& other) {
-        if (&other != this){
+        if (&other != this) {
             _ptr = other.ptr;
             _ptr_size = other.ptr_size;
             (*_ptr_size)++;
@@ -354,3 +354,29 @@ int fib(int n) {
     if (n <= 1) return n;
     return (fib(n-1) + fib(n-2));
 }
+
+template<typename T>
+class vector {
+    T* data_;
+    std::size_t size_;
+    std::size_t capcity_
+public:
+    vector(std::size_t capcity):size_(0),capcity_(capcity) {
+        data = new T[capcity_];
+    }
+
+    void push(const T& data) {
+        if (size_==capcity_) {
+            resize(size_==0 ? 1 : size_*2);
+        }
+        data_[size++]=data;
+    }
+
+    void resize(std::size_t size) {
+        T* tmp = new T[size];
+        std::copy(tmp,data_,capcity_);
+        delete[] data_;
+        data_= tmp;
+    }
+
+};

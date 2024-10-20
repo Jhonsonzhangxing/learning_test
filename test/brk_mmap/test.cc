@@ -28,3 +28,6 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+//ps -o majflt,minflt -C program
+// https://blog.51cto.com/u_16099258/9377782

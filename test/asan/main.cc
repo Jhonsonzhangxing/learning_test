@@ -22,7 +22,7 @@
 // }
 namespace demo {
   void DemoFunction() {
-    int arr[11];                             // 定长数组大小11个int, 44个bytes
+    int arr[10];                             // 定长数组大小11个int, 44个bytes
     for (int idx = 0; idx < 2000; idx++) {   // 越界发生在idx = 11的地方
       arr[idx] = idx * 2;
     }

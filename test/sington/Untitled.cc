@@ -13,7 +13,7 @@ public:
         if (instance == nullptr) {
             static std::once_flag flag;
             std::call_once(flag, []() {
-                instance = new (noexcept) T();
+                instance = new T(noexcept)();
             });
         }
         return instance;

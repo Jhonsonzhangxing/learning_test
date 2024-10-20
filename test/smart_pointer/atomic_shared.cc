@@ -28,7 +28,7 @@ public:
     //++(count_);
     ptr_.store(oth.ptr_);
     count_.store(oth.count_);
-    
+    count_.fetch_add(1);
     ///////////
     {
       std::unique_lock<std::mutex> lck(mtx_);
